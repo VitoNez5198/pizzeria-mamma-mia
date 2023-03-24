@@ -25,7 +25,7 @@ const Galeria = () => {
                 <b>Ingredientes:</b>
                 <ul>
                   {pizza.ingredients.map((ingredientes, i) => (
-                    <li key={i}>🍕{ingredientes}</li>
+                    <li key={i}>{ingredientes}</li>
                   ))}
                 </ul>
               </Card.Text>
@@ -40,7 +40,7 @@ const Galeria = () => {
                 >
                   Ver más
                 </Button>
-                <Button variant="danger" onClick={() => addtoCard(pizza)}>
+                <Button variant="success" onClick={() => addtoCard(pizza)}>
                   Añadir
                 </Button>
               </div>

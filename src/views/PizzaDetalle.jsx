@@ -47,7 +47,7 @@ export default function PizzaDetalle() {
                   <h4>Precio: ${pizzaDetail.price}</h4>
                 </div>
                 <Button
-                  variant="danger"
+                  variant="success"
                   onClick={() => addtoCard(pizzaDetail)}
                 >
                   Añadir 🛒

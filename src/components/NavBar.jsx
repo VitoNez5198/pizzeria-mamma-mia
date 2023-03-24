@@ -10,7 +10,7 @@ export default function NavBar() {
     (valorAnterior, { count, price }) => valorAnterior + price * count, 0);
 
   return (
-    <Navbar className="d-flex justify-content-between px-4" bg="primary" variant="ligth">
+    <Navbar className="d-flex justify-content-between px-4" bg="success" variant="ligth">
       <Navbar.Brand>
         <Link to="/" className="logo-nombre mx-1 mb-0">
           <h4 className="mb-0">🍕Pizzeria Mamma Mia </h4>
@@ -19,7 +19,7 @@ export default function NavBar() {
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-end">
         <Link to="/Carrito" className="logo-nombre mx-1 mb-0">
-          <h4 className="mb-0">🛒${total.toLocaleString("es-Cl")}</h4>
+          <h4 className="mb-0">🛒Carro ${total.toLocaleString("es-Cl")}</h4>
         </Link>
       </Navbar.Collapse>
     </Navbar>
